@@ -16,11 +16,15 @@ struct ContentView: View {
             Button("Toggle Background") {
                 toggleBackground()
             }
+            .frame(width: 250, height: 100)
+            .background(Color(.gray))
+            .foregroundColor(.white)
+            .cornerRadius(20)
         }
     }
 
     func toggleBackground() {
-        backgroundColor = backgroundColor == .white ? Color.purple : .white
+        backgroundColor = backgroundColor == .white ? Color.cyan : .white
     }
 }
 
